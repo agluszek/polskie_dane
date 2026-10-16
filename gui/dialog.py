@@ -81,7 +81,7 @@ class PolskieDaneDialog(QtWidgets.QDialog, FORM_CLASS):
         if sys.platform != "darwin":
             return None
         try:
-            result = subprocess.run(
+            result = subprocess.run(  # nosec B603
                 ["/usr/bin/defaults", "read", "-g", "AppleInterfaceStyle"],
                 capture_output=True,
                 text=True,
