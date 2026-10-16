@@ -1,4 +1,4 @@
-import subprocess
+import subprocess  # nosec B404
 import sys
 import tempfile
 import textwrap
@@ -111,7 +111,7 @@ class PackagingTest(unittest.TestCase):
                 assert not iface.actions
                 print("Packaged plugin initialized and unloaded")
             """)
-            result = subprocess.run(
+            result = subprocess.run(  # nosec B603
                 [sys.executable, "-c", smoke_test],
                 cwd=directory,
                 capture_output=True,
