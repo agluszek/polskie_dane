@@ -1,0 +1,15 @@
+[tool.ruff]
+target-version = "py39"
+line-length = 79
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "N"]
+
+[tool.ruff.lint.pep8-naming]
+extend-ignore-names = [
+    "classFactory", "initGui", "showEvent", "closeEvent",
+    "eventFilter", "keyPressEvent", "changeEvent",
+    "addToolBar", "mainWindow", "addPluginToMenu", "removePluginMenu",
+    "setUp", "tearDown", "headerData", "initStyleOption",
+]
+

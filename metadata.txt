@@ -1,0 +1,27 @@
+[general]
+name=Polskie dane
+qgisMinimumVersion=3.28
+qgisMaximumVersion=4.99
+description=Wyszukuj polskie usługi danych przestrzennych w EZiUDP, filtruj według TERYT i dodawaj warstwy WMS, WMTS, WFS oraz WCS.
+    English: Find Polish spatial data services in the EZiUDP registry, filter by TERYT and add WMS, WMTS, WFS and WCS layers.
+version=1.0.0
+author=Aleksandra Głuszek
+email=alek.glu@gmail.com
+about=Polskie dane umożliwia wyszukiwanie polskich usług danych przestrzennych w ewidencji zbiorów i usług danych przestrzennych (EZiUDP), prowadzonej przez Głównego Geodetę Kraju na podstawie art. 13 ustawy z dnia 4 marca 2010 r. o infrastrukturze informacji przestrzennej, wdrażającej dyrektywę INSPIRE 2007/2/WE.
+    Wyszukuj zbiory po nazwie, filtruj wyniki według województwa, powiatu lub gminy (TERYT), sprawdzaj identyfikatory IIP i organy zgłaszające oraz dodawaj wybrane warstwy WMS, WMTS, WFS i WCS do projektu. Listy jednostek administracyjnych pochodzą z API ULDK GUGiK. Sprawdzanie dostępnych warstw odbywa się w tle, a wybór warstw jest dostępny w panelu bocznym.
+    Wtyczka pobiera dane z publicznych API na bieżąco i nie zawiera lokalnej kopii całej ewidencji. Dostępność danych i usług zależy od ich dostawców. Jest to niezależny projekt, a nie oficjalny produkt GUGiK.
+    English:
+    Polskie dane connects QGIS to Poland's Register of Spatial Data Sets and Services (EZiUDP), maintained by the Surveyor General of Poland (GGK). The register is established under Article 13 of the Polish Act of 4 March 2010 on Spatial Information Infrastructure, implementing the INSPIRE Directive 2007/2/EC.
+    Search datasets by name, filter services by voivodeship, county or municipality (TERYT), inspect dataset identifiers and reporting authorities, and select WMS, WMTS, WFS or WCS layers to add to your project. Administrative unit lists come from the GUGiK ULDK API. Service capabilities are checked in the background; multi-layer services offer an inline layer selector.
+    The plugin queries the public APIs at runtime; it does not bundle an offline copy of the register. Data and service availability depend on their providers. This is an independent project, not an official GUGiK product.
+icon=resources/icons/icon.svg
+homepage=https://github.com/agluszek/polskie_dane
+repository=https://github.com/agluszek/polskie_dane
+tracker=https://github.com/agluszek/polskie_dane/issues
+tags=polska,polskie dane,dane przestrzenne,otwarte dane,usługi danych przestrzennych,infrastruktura informacji przestrzennej,ewidencja zbiorów i usług danych przestrzennych,jednostki administracyjne,geoportal,inspire,teryt,eziudp,gugik,ggk,wms,wmts,wfs,wcs
+experimental=False
+deprecated=False
+hasProcessingProvider=no
+server=False
+changelog=1.0.0: Pierwsza wersja Polskie dane. Wyszukiwanie usług EZiUDP, filtrowanie według TERYT i dodawanie warstw WMS, WMTS, WFS oraz WCS.
+    English: Initial version of Polskie dane. Discover EZiUDP services, filter by TERYT and add WMS, WMTS, WFS and WCS layers.
