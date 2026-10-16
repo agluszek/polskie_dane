@@ -82,7 +82,7 @@ class PolskieDaneDialog(QtWidgets.QDialog, FORM_CLASS):
             return None
         try:
             result = subprocess.run(
-                ["defaults", "read", "-g", "AppleInterfaceStyle"],
+                ["/usr/bin/defaults", "read", "-g", "AppleInterfaceStyle"],
                 capture_output=True,
                 text=True,
                 timeout=1.5,
