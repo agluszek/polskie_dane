@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import subprocess
+import subprocess  # nosec B404
 import sys
 from collections.abc import Sequence
 from pathlib import Path
